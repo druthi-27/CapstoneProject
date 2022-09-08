@@ -1,15 +1,21 @@
-import Slider from "./Componenets/DashBoard/UserDash";
-import { Provider } from 'react-redux'
-import store from "./Componenets/DashBoard/Store/store";
-import UserProduct from "./Componenets/UserProduct";
+// import UserProduct from "../src/Pages/DashBoard/UserProduct"
+// import Slider from "../src/Pages/DashBoard/UserDash"
+import "./index.css"
+import SalesTable from "../src/Pages/Sales/Sales"
+import  StockTable from "../src/Pages/Stocks/Stock"
+import AboutInfo from "./Pages/About/About";
 function App() {
   return (
     <div>
-      <Slider></Slider>
+       {/* <Slider></Slider>
       <Provider store={store}>
         <UserProduct></UserProduct>
-    </Provider>
+    </Provider>   */}
      
+    {/* <h2  className="ss-head">Stock Report</h2>
+      <StockTable></StockTable>  */}
+      <AboutInfo></AboutInfo>
+     {/* <SalesTable></SalesTable>  */}
     </div>
   );
 }
